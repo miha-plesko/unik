@@ -14,6 +14,7 @@ func (p *VirtualboxProvider) GetConfig() providers.ProviderConfig {
 			compilers.RUMP_PYTHON_VIRTUALBOX,
 			compilers.OSV_JAVA_VIRTUALBOX,
 			compilers.INCLUDEOS_CPP_VIRTUALBOX,
+			compilers.OSV_NODEJS_VIRTUALBOX,
 		},
 	}
 }

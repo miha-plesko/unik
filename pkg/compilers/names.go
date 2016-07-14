@@ -24,4 +24,6 @@ const (
 
 	INCLUDEOS_CPP_QEMU = "includeos-cpp-qemu"
 	INCLUDEOS_CPP_VIRTUALBOX = "includeos-cpp-virtualbox"
+
+	OSV_NODEJS_VIRTUALBOX = "osv-nodejs-virtualbox"
 )

@@ -11,7 +11,7 @@ type OsvVmwareCompiler struct {}
 const OSV_VMWARE_MEMORY = 512
 
 func (osvCompiler *OsvVmwareCompiler) CompileRawImage(params types.CompileImageParams) (_ *types.RawImage, err error) {
-	resultFile, err := compileRawImage(params, false)
+	resultFile, err := compileRawImageJava(params, false)
 	if err != nil {
 		return nil, errors.New("failed to compile raw osv image", err)
 	}
