@@ -10,6 +10,7 @@ type Providers struct {
 	Vsphere    []Vsphere    `yaml:"vsphere"`
 	Virtualbox []Virtualbox `yaml:"virtualbox"`
 	Qemu       []Qemu       `yaml:"qemu"`
+	Openstack  []Openstack  `yaml:"openstack"`
 }
 
 type Aws struct {
@@ -35,9 +36,20 @@ type Virtualbox struct {
 }
 
 type Qemu struct {
-	Name string `yaml:"name"`
-	NoGraphic bool `yaml:"no_graphic"`
-	DebuggerPort int `yaml:"debugger_port"`
+	Name         string `yaml:"name"`
+	NoGraphic    bool   `yaml:"no_graphic"`
+	DebuggerPort int    `yaml:"debugger_port"`
+}
+
+type Openstack struct {
+	Name          string `yaml:"name"`
+	OSUser        string `yaml:"os_username"`
+	OSPassword    string `yaml:"os_password"`
+	OSAuthUrl     string `yaml:"os_auth_url"`
+	OSTenantId    string `yaml:"os_tenant_id"`
+	OSTenantName  string `yaml:"os_tenant_name"`
+	OSProjectName string `yaml:"os_project_name"`
+	OSRegion      string `yaml:"os_region"`
 }
 
 type VirtualboxAdapterType string
